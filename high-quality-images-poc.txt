@@ -1,0 +1,54 @@
+high-quality-images-poc/
+│
+├── kafka/
+│   ├── config/
+│   │   └── server.properties
+│   ├── data/
+│   └── logs/
+│
+├── cassandra/
+│   ├── config/
+│   │   └── cassandra.yaml
+│   ├── data/
+│   └── logs/
+│
+├── microservices/
+│   ├── image-compression/
+│   │   ├── src/
+│   │   ├── Dockerfile
+│   │   └── requirements.txt
+│   │
+│   ├── metadata-extraction/
+│   │   ├── src/
+│   │   ├── Dockerfile
+│   │   └── requirements.txt
+│   │
+│   └── common/  # Shared libraries and utilities
+│       └── src/
+│
+├── api/
+│   ├── src/
+│   ├── Dockerfile
+│   └── requirements.txt
+│
+├── ui/
+│   ├── src/
+│   ├── Dockerfile
+│   └── package.json
+│
+├── monitoring/
+│   ├── prometheus/
+│   │   ├── prometheus.yml
+│   │   └── rules/
+│   │
+│   ├── grafana/
+│   │   └── dashboards/
+│   │
+│   └── scripts/  # Scripts to setup or maintain monitoring tools
+│
+├── scripts/
+│   ├── setup.sh  # Script to setup the whole environment
+│   └── start_services.sh  # Script to start all services
+│
+└── docs/
+    └── project_documentation.md
